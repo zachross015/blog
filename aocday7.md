@@ -1,6 +1,3 @@
----
-usemathjax: true
----
 {% include head.html %}
 
 # Day 7
@@ -8,8 +5,8 @@ usemathjax: true
 
 The problem outlined in part 1 of day 7 is to find all of the bags where the
 "shiny gold" bag is some descendant of it. We can structure the input as a
-directed graph, where each bag constitues a vertex $$v$$ and there is an edge \((v,
-v_k)\) whenever $$v$$ *contains* $$v_k$$. This produces a directed graph $$G = (V,
+directed graph, where each bag constitues a vertex $$v$$ and there is an edge $$(v,
+v_k)$$ whenever $$v$$ *contains* $$v_k$$. This produces a directed graph $$G = (V,
 E)$$. A bag, call this vertex $$b$$, can then contain at least one "shiny gold"
 bag, call this vertex $$s$$, if there exists a path $$b \leadsto s$$. The job of the
 programmer is then to find out just how many $$v \in V$$ have a path $$v \leadsto
