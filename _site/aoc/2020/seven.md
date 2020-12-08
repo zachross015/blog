@@ -38,9 +38,6 @@ prior to adding it to its parent. For example, if we tried to run BFS with this
 stack idea, the auxiliary stack would be a jumble of different weights that all
 corresponded to different parents, which would simply not do.
 
-The solution to part 2 can be sped up by using a dynamic approach for
-calculating the bag weights. This can be done by storing the weight of the bag
-in the vertex, so that $$w(v_i) = w_i + (w_i * w_b)$$. By doing this, we can
-ensure that we only find the weight of the bag if it hasn't been weighted yet.
+## Program
 
 Thanks for reading!
