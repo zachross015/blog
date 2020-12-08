@@ -3,6 +3,8 @@
 # Day 7
 ###### Advent of Code
 
+## Theory
+
 The problem outlined in part 1 of day 7 is to find all of the bags where the
 "shiny gold" bag is some descendant of it. We can structure the input as a
 directed graph, where each bag constitues a vertex $$v$$ and there is an edge $$(v,
@@ -28,5 +30,7 @@ exploration, it pops and adds the weights $$w_b = \sum_{j=1}^n w(v_i, b_j)$$ fro
 the top of the stack, then appends the value $$w_i + (w_i * w_b)$$ to $$A$$, as was
 specified by the problem description. This then gives us the amount of
 individual bags required inside of the "shiny gold" bag.
+
+## Program
 
 Thanks for reading!
